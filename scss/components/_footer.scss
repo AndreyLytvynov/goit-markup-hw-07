@@ -1,0 +1,93 @@
+.footer {
+  background-color: $bgc-footer;
+  padding: 60px 0;
+  &__title {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__container {
+    display: flex;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__link-street {
+    color: $white-text;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $akcent;
+    }
+  }
+  &__link-mail {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $akcent;
+    }
+  }
+  &__link-telephon {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $akcent;
+    }
+  }
+}
+
+.subscription {
+  margin-top: 16px;
+  margin-left: 93px;
+  &__title {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__field {
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    padding-left: 16px;
+    color: #ffffff;
+    &:focus {
+      outline: 1px solid $akcent;
+    }
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.media-block {
+  margin-left: 70px;
+  margin-top: 16px;
+}
