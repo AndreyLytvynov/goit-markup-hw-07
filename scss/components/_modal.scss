@@ -7,13 +7,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &.is-hidden{
+  overflow-y: scroll;
+  &.is-hidden {
     opacity: 0;
     pointer-events: none;
-
   }
 }
-
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
@@ -130,29 +129,27 @@
   }
 }
 
-
 label.agreement {
   position: relative;
 
   display: flex;
   align-items: center;
-padding-top: 20px;
+  padding-top: 20px;
 }
 
-
-.agreement__text {     
-margin-left: 25px;
+.agreement__text {
+  margin-left: 25px;
   font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $paragraph-text;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $paragraph-text;
 }
 .agreement__link {
-  color: $akcent
+  color: $akcent;
 }
 
-.agreement__icon{
+.agreement__icon {
   position: absolute;
   display: inline-block;
   width: 16px;
@@ -163,7 +160,6 @@ margin-left: 25px;
   .register-form__checkbox:checked + & {
     background-color: $akcent;
     border: 1px solid $akcent;
-    
   }
 }
 
