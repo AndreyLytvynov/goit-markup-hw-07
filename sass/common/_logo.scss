@@ -1,0 +1,15 @@
+/* Логотип */
+.logo {
+  color: var(--accent-color);
+}
+.header__logo,
+.footer__logo {
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo__part--black {
+  color: var(--black-text-color);
+}
+.logo__part--white {
+  color: var(--white-text-color);
+}

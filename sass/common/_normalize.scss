@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+*:focus {
+  outline-color: var(--accent-color);
+}
+
+/* Убираем подчеркивание ссылок */
+a {
+  text-decoration: none;
+}
+a {
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Убираем маркеры в списках */
+ul {
+  list-style-type: none;
+}
+
+body {
+  color: var(--title-text-color);
+  background-color: var(--white-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Заголовки секций h2*/
+.section-header {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+// Скрытие
+.is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

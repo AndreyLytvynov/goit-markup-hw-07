@@ -1,0 +1,121 @@
+/* Футер */
+.footer {
+  /* margin: 0 auto; */
+  padding: 60px 0;
+  background-color: var(--bgc-footer);
+}
+.footer__container {
+  display: flex;
+}
+.footer__box {
+  margin-right: 70px;
+}
+
+.footer__media-box {
+  padding-top: 15px;
+}
+
+.soc-media__link--brown {
+  fill: var(--white-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__media-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer__contacts {
+  margin-top: 30px;
+}
+
+.footer__contacts > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts-footer__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &--home {
+    color: var(--white-text-color);
+  }
+
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__form {
+  padding-top: 15px;
+  margin-left: 93px;
+}
+.form-footer__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
+.form-footer__button {
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  background-color: var(--accent-color);
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+}
+.button__icon {
+  margin-left: 10px;
+  fill: var(--white-text-color);
+}
+
+.form-footer__holder {
+  display: flex;
+}
+
+.form-footer__input {
+  padding: 15px 0;
+  padding-left: 16px;
+  width: 358px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--white-text-color);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.form-footer__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
